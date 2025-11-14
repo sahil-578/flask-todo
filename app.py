@@ -8,7 +8,9 @@ def home():
 
 @app.route("/api")
 def api():
-    data = {"message" : "Initial JSON data"}
+    data = {
+        "message" : "Initial JSON data",
+        "version" : 2}    
     return jsonify(data)
 
 if __name__ == "__main__":
